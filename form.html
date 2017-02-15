@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <form action="https://formspree.io/orest.krykh@gmail.com" method="POST">
+        <label for="client-name">client Name</label>
+        <input type="text" name="client-name" id="client-name" required>
+        <br>
+        <label>
+            Client Email:
+            <input type="email" name="client-email" required>
+        </label>
+        <br>
+        <label>
+            Car number:
+            <input type="text" name="car-name" required pattern="[A-Z]{2}[\d][A-Z]{2}"
+            placeholder="AA11234BB"
+            title="AA1234BB">
+            
+        </label>
+        <input type="submit">
+        <input type="reset" >
+    </form>
+</body>
+</html>
